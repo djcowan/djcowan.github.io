@@ -19,14 +19,23 @@
 				align-items: center;
 				justify-content: center;
 				font-family: Arial, Helvetica, sans-serif;
+				overflow: hidden;
+				transition: all 2s ease-in-out;
+			}
+
+			header {
+				perspective: 400px;
 			}
 
 			h1 {
 				color: #131313;
 				text-align: center;
 				font-size: calc(50vw * 0.89);
-				letter-spacing: -80pt;
-				transition: all 1s ease-in-out;
+				letter-spacing: -40pt;
+				transition: all 2s ease-in-out;
+				transform: rotate3d(1, 0, 0, 360deg) scale(10);
+				text-shadow: 0 0 1em rgba(0, 0, 0, .15);
+
 			}
 
 			body:hover {
@@ -38,8 +47,8 @@
 				text-decoration: none;
 				color: #101010;
 				letter-spacing: -50pt;
-				transition: all 1s ease-in-out;
-				text-shadow: 0 0 1px rgba(255, 255, 255, .1);
+				transform: rotate3d(1, 1, 1, 0deg) scale(1);
+				text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 			}
 		</style>
 	</head>
